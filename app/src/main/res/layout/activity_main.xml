@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.musicplayer.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="385dp"
+        android:layout_height="515dp"
+        android:background="@drawable/background"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <TextView
+            android:id="@+id/actname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Playing Music"
+            android:textColor="#ffffff"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/activityinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/actname"
+            android:text="this activity is used to play music and its has a details button for song details"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/mp"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_below="@id/activityinfo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/a1200x630bb" />
+
+        <ImageView
+            android:id="@+id/pb"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/mp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/play"
+            android:onClick="MediaPlayerStart" />
+
+        <ImageView
+            android:id="@+id/stopb"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/mp"
+            android:layout_marginRight="70dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/stop"
+            android:onClick="MediaPlayerStop" />
+
+        <ImageView
+            android:id="@+id/pause"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/mp"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/puase"
+            android:onClick="MediaPlayerPause" />
+
+        <Button
+            android:id="@+id/ditals"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pb"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:text="Details"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/donateint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pb"
+            android:layout_marginTop="16dp"
+            android:text="Donate US"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
